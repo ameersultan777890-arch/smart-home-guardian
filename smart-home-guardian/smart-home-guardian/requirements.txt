@@ -1,0 +1,7 @@
+flask>=3.0
+ask-sdk-core>=1.19
+requests>=2.31
+cryptography>=42
+gunicorn>=22
+mcp>=1.12,<2
+pytest>=8

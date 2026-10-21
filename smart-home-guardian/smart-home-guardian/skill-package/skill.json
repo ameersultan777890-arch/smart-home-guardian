@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Smart Home Guardian",
+          "summary": "Audit and secure your smart home just by talking to Alexa.",
+          "description": "Smart Home Guardian runs a simulated security audit of your connected devices, explains weak spots in plain language, fixes them by voice, and locks all entry points on command.",
+          "examplePhrases": [
+            "Alexa, open smart home guardian",
+            "Alexa, ask smart home guardian to run a security audit",
+            "Alexa, tell smart home guardian to lock all entry points"
+          ],
+          "keywords": ["security", "smart home", "iot", "audit"]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Simulation only. Say: run a security audit, then yes, then lock all entry points, then give me a summary.",
+      "category": "SMART_HOME",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {"uri": "https://YOUR-PUBLIC-HOST/alexa", "sslCertificateType": "Wildcard"}
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

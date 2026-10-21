@@ -1,0 +1,42 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "smart home guardian",
+      "intents": [
+        {"name": "AMAZON.CancelIntent", "samples": []},
+        {"name": "AMAZON.HelpIntent", "samples": []},
+        {"name": "AMAZON.StopIntent", "samples": []},
+        {"name": "AMAZON.FallbackIntent", "samples": []},
+        {"name": "AMAZON.YesIntent", "samples": []},
+        {"name": "AMAZON.NoIntent", "samples": []},
+        {"name": "RunAuditIntent", "slots": [], "samples": [
+          "run a security audit", "audit my home", "scan my smart home", "check my devices",
+          "check my home security", "is my home secure", "run a security check", "start a scan"]},
+        {"name": "ReadFindingsIntent", "slots": [], "samples": [
+          "read more issues", "what else did you find", "next issues", "tell me more", "read the next ones"]},
+        {"name": "FixDeviceIntent", "slots": [{"name": "device", "type": "DEVICE"}], "samples": [
+          "fix the {device}", "secure the {device}", "fix {device}", "patch the {device}",
+          "harden the {device}", "update the {device}"]},
+        {"name": "FixAllIntent", "slots": [], "samples": [
+          "fix everything", "fix all issues", "secure everything", "fix all devices", "patch everything"]},
+        {"name": "LockAllIntent", "slots": [], "samples": [
+          "lock all entry points", "lock everything", "lock all doors", "lock down the house",
+          "lock the house", "secure all entry points"]},
+        {"name": "SummaryIntent", "slots": [], "samples": [
+          "give me a summary", "summary", "how secure is my home", "what is my security score",
+          "summarize my security", "security report"]}
+      ],
+      "types": [
+        {"name": "DEVICE", "values": [
+          {"name": {"value": "front door lock", "synonyms": ["front lock", "front door", "main door lock"]}},
+          {"name": {"value": "back door lock", "synonyms": ["back lock", "back door"]}},
+          {"name": {"value": "garage door", "synonyms": ["garage", "garage opener"]}},
+          {"name": {"value": "living room camera", "synonyms": ["camera", "security camera", "living room cam"]}},
+          {"name": {"value": "router", "synonyms": ["wifi router", "wi-fi", "network router", "gateway"]}},
+          {"name": {"value": "thermostat", "synonyms": ["heating", "nest"]}},
+          {"name": {"value": "motion sensor", "synonyms": ["sensor", "motion detector"]}}
+        ]}
+      ]
+    }
+  }
+}
